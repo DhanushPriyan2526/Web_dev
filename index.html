@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1,h2 {
+        body {
+            background-color: rgb(251, 251, 241);
+        }
+       #topic {
             text-align: center;
+            background-color: rgb(52, 161, 244);
+            padding:10px;
+            border: 3px solid black;
         }
 
         p{
@@ -15,30 +21,70 @@
         }
         #head {
             text-align: left;
+        
         }
+        .box {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            padding: 5px; 
+            }
+        .box-item {
+            background-color: rgb(52, 161, 244);
+            font-size: medium;
+            border: 3px black solid;
+            text-align: center;  
+        }
+
     </style>
 </head>
 <body>
-    <div>
+    <div id="topic">
+        <i><h1 style="font-size: 40px;">About Me</h1></i>
         <i><h1>Dhanush Priyan M</h1></i>
         <i><h2>Artifcial Intelligence and data Science</h2></i>
     </div>
 
     <div>
-        <h2 id ="head">Education</h2>
+        <u><h3 id ="head">Education</h3></u>
         <ul>
         <li>10th </li>
         <li>12th</li>
         <li>college</li>
     </ul></div>
-    
     <div>
-        <h2 id ="head"> Hobbies</h2>
-        <ol type="I" start="100">
-            <li>cricket</li>
-            <li>Watching movies</li>
+        <u><h3 id="head">Skills</h3></u>
+        <ol>
+            <li>Machine learning</li>
+            <li>Python</li>
+            <li>Computer Vision</li>
+            <li>Front-end development</li>
         </ol>
     </div>
+    
+    <div>
+        <u><h3 id ="head"> Hobbies</h3></u>
+        <ol type="I" start="1">
+            <li>cricket</li>
+            <li>Watching movies</li>
+            <li>comics</li>
+        </ol>
+    </div>
+    <div>
+        <u><h3 id="head">Socials</h3></u>
+        <ol>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">facebook</a></li>
+
+        </ol>
+    </div>
+    <div class="box">
+        <div class="box-item"><p>Mail me</p></div>
+        <div class="box-item"><p>Contact me</p></div>
+        <div class="box-item"><p>Message me</p></div>
+    </div>
+
     
     
     
